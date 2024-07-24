@@ -7,15 +7,15 @@ import plotly.express as px
 import pandas as pd
 import numpy as np
 import altair as alt
-from waitress import serve
-from teste2 import app  # Substitua 'your_app' pelo nome do seu módulo
+#from waitress import serve
+#from teste2 import app  # Substitua 'your_app' pelo nome do seu módulo
 
-if __name__ == "__main__":
-    serve(app, host='0.0.0.0', port=8000)
+#if __name__ == "__main__":
+   # serve(app, host='0.0.0.0', port=8000)
 
 
 app = Dash(__name__)
-#server = app.server
+server = app.server
 
 # assume you have a "long-form" data frame
 # see https://plotly.com/python/px-arguments/ for more options
