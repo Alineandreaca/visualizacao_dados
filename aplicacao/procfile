@@ -1,1 +1,0 @@
-web: gunicorn teste2:app.server
