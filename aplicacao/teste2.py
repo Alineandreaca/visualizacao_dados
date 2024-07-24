@@ -16,6 +16,8 @@ import altair as alt
 
 app = Dash(__name__)
 server = app.server
+port = int(os.environ.get("PORT", 5000))
+server.run(host='0.0.0.0', port=port)
 
 # assume you have a "long-form" data frame
 # see https://plotly.com/python/px-arguments/ for more options
