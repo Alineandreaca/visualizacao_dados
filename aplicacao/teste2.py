@@ -15,7 +15,7 @@ import altair as alt
 
 
 app = Dash(__name__)
-#server = app.server
+server = app.server
 
 # assume you have a "long-form" data frame
 # see https://plotly.com/python/px-arguments/ for more options
