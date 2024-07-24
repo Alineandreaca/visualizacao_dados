@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 import altair as alt
 from waitress import serve
-from your_app import app  # Substitua 'your_app' pelo nome do seu módulo
+from teste2 import app  # Substitua 'your_app' pelo nome do seu módulo
 
 if __name__ == "__main__":
     serve(app, host='0.0.0.0', port=8080)
