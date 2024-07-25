@@ -7,7 +7,7 @@ services:
     # A requirements.txt file must exist
     buildCommand: /opt/render/project/src/.venv/bin/python3.10 -m pip install --upgrade pip
     # A src/app.py file must exist and contain `server=app.server`
-    startCommand: gunicorn --chdir src app:server
+    startCommand: gunicorn --chdir app:server
     envVars:
       - key: PYTHON_VERSION
         value: 3.10.0
