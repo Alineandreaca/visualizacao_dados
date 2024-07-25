@@ -6,18 +6,11 @@ from dash import Dash, html, dcc, Input, Output
 import plotly.express as px
 import pandas as pd
 import numpy as np
-import altair as alt
-#from waitress import serve
-#from teste2 import app  # Substitua 'your_app' pelo nome do seu módulo
-
-#if __name__ == "__main__":
-   # serve(app, host='0.0.0.0', port=8000)
-
 
 app = Dash(__name__)
 server = app.server
 #port = int(os.environ.get("PORT", 5000))
-#app.server.run(host='0.0.0.0', port=port)
+app.server.run(host='0.0.0.0', port=port)
 
 # assume you have a "long-form" data frame
 # see https://plotly.com/python/px-arguments/ for more options
